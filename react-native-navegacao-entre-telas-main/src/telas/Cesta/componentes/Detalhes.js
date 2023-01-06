@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
+
 import { Image, StyleSheet, View, TouchableOpacity } from 'react-native';
 
 import useTextos from '../../../hooks/useTextos';
@@ -6,6 +8,7 @@ import Texto from '../../../componentes/Texto';
 
 export default function Detalhes({ nome, produtor, descricao, preco }) {
   const { botaoComprar } = useTextos();
+  const navigation = useNavigation();
 
   return <>
     <Texto style={estilos.nome}>{ nome }</Texto>
@@ -18,7 +21,8 @@ export default function Detalhes({ nome, produtor, descricao, preco }) {
 
     <TouchableOpacity 
       style={estilos.botao} 
-      onPress={() => {}}>
+      //</>onPress={() => navigation.navigate('HomeScreen', {compra: {nome, timeStamp: + new Date()}})}>
+      onPress={() => navigation.navigate('Resumo', {nome})}>
       <Texto style={estilos.textoBotao}>{ botaoComprar }</Texto>
     </TouchableOpacity>
   </>
