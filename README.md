@@ -7,3 +7,7 @@ Pastas:
 orgs-cesta => "React Native: criando um app"
 
 orgsHooks => "React Native: utilizando e criando Hooks"
+
+react-native-navegacao-entre-telas-main => "React Native: criando menu e navegando entre telas"
+
+react-native-utilizando-web-api => "React Native: utilizando Web API"
