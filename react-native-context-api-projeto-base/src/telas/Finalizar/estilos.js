@@ -7,21 +7,39 @@ export const estilos = (tema) => {
   container: {
     flex: 1,
     backgroundColor: tema.fundo,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'stretch',
+    width: '100%',
+    height: '100%'
+  },
+  containerInformacoesEntrega:{
+    width: '95%',
+    height: '25%',
+    backgroundColor: tema.containerInformacoesEntrega,
+    alignItems: 'stretch',
+    marginTop: '3%',
+    alignSelf: 'center',
+    borderRadius: 15
   },
   tituloArea: {
     width: '100%',
-    alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: 'flex-start',
     flexDirection: 'row',
-    paddingTop: Constants.statusBarHeight,
-    marginBottom: 16,
+    margin: 15
   },
   titulo: {
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: 'bold',
     color: tema.titulo,
+  },
+  texto: {
+    fontSize: 15,
+    color: tema.titulo,
+    marginLeft: 15
+  },
+  carrinhoTexto: {
+    fontSize: 15,
+    color: tema.titulo,
+    marginTop: 15
   },
   lista: {
     flex: 1,
@@ -69,5 +87,22 @@ export const estilos = (tema) => {
     color: tema.texto,
     fontSize: 30,
   },
+  botao: {
+    margin: 16,
+    backgroundColor: tema.botao,
+    paddingVertical: 16,
+    borderRadius: 10,
+    alignItems: 'center',
+    position: 'absolute',
+    right: 0,
+    bottom: 0,
+    left: 0
+  },
+  botaoTexto: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: tema.preto,
+    textAlign: 'center'
+  }
 });
 }
