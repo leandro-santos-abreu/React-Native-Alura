@@ -17,3 +17,5 @@ react-native-guardando-informacoes-localmente => "React Native: guardando inform
 react-native-context-api-projeto-base => "React Native: utilizando o Context API nas suas aplicações"
 
 react-native-criando-testes-para-sua-aplicacao-main => "React Native: criando testes para sua aplicação"
+
+react-native-animacoes-projeto-base => "React Native: personalize apps com animações"
